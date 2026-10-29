@@ -56,13 +56,6 @@ A prototípus a következő technológiákkal készült:
 
 Az alkalmazás teljes egészében kliensoldalon működik. Nem igényel regisztrációt, adatbázist vagy külön alkalmazásszervert. A felhasználói eredményeket nem tárolja tartósan.
 
-### Kipróbálás
-
-**Online változat:**  
-https://FELHASZNALONEV.github.io/kiberkuldetes/
-
-A projekt helyben is futtatható a repozitórium letöltésével és az `index.html` fájl böngészőben történő megnyitásával.
-
 ### Tesztelés
 
 Az alkalmazás alapvető működését hat manuális funkcionális tesztesettel ellenőriztem.
@@ -138,13 +131,6 @@ The prototype was developed using:
 - JavaScript
 
 The application runs entirely on the client side and does not require registration, a database, or a dedicated application server. User results are not stored persistently.
-
-### Try the application
-
-**Live demo:**  
-https://FELHASZNALONEV.github.io/kiberkuldetes/
-
-The application can also be run locally by downloading the repository and opening `index.html` in a web browser.
 
 ### Testing
 
