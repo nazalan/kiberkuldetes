@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f6ff" />
+  <title>KiberKüldetés – Biztonságos döntések online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="KiberKüldetés kezdőlap" id="brand-home">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span><strong>KiberKüldetés</strong><small>Gyakorlat online helyzetekre</small></span>
+      </a>
+      <div class="top-meta">
+        <span class="save-note"><span class="live-dot"></span> Interaktív bemutató</span>
+        <span class="xp-pill" aria-label="Szerzett tapasztalati pontok"><span aria-hidden="true">✦</span> <b id="xp-total">0</b> XP</span>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="screen welcome-screen" id="welcome-screen">
+        <div class="welcome-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> KIBERBIZTONSÁG A MINDENNAPOKBAN</div>
+          <h1>Megállsz egy<br /><span>pillanatra?</span></h1>
+          <p class="hero-text">Egy kattintás, egy üzenet, egy döntés. Nézd meg, hogyan ismerheted fel a gyanús online helyzeteket, mielőtt baj lenne.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" id="start-button">Indulhat a küldetés <span aria-hidden="true">→</span></button>
+            <span class="duration"><span aria-hidden="true">◷</span> 6 rövid helyzet · kb. 5 perc</span>
+          </div>
+          <div class="hero-footnote"><span class="shield-icon" aria-hidden="true">✓</span> Nincs rossz kérdés. Minden válasz után kapsz magyarázatot.</div>
+        </div>
+        <div class="hero-art" aria-label="Online biztonságot jelképező illusztráció">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="float-chip chip-lock"><span>⌑</span> Biztonság</div>
+          <div class="float-chip chip-alert"><span>!</span> Gyanús link?</div>
+          <div class="phone-card">
+            <div class="phone-top"><span></span><span></span><span></span><i></i></div>
+            <div class="phone-shield"><span>✓</span></div>
+            <div class="phone-line line-long"></div><div class="phone-line line-short"></div>
+            <div class="phone-mini-label">TE IRÁNYÍTASZ</div>
+            <div class="phone-button"></div>
+          </div>
+          <div class="spark spark-a">✳</div><div class="spark spark-b">✦</div>
+        </div>
+        <div class="welcome-bottom"><span>01 / 06</span><span class="bottom-rule"></span><span>ISMERD FEL. GONDOLD VÉGIG. DÖNTS BIZTONSÁGOSAN.</span></div>
+      </section>
+
+      <section class="screen mission-screen hidden" id="mission-screen" aria-live="polite">
+        <div class="mission-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> A KÜLDETÉS</div>
+            <h2 id="scenario-title">Helyzet címe</h2>
+          </div>
+          <span class="step-counter" id="step-counter">1 / 6</span>
+        </div>
+        <div class="progress-wrap" aria-label="Küldetés haladása"><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div></div>
+        <div class="mission-grid">
+          <article class="scenario-card">
+            <div class="scenario-topline"><span class="scenario-icon" id="scenario-icon" aria-hidden="true">✉</span><span class="scenario-tag" id="scenario-tag">ÜZENETEK</span></div>
+            <p class="scenario-text" id="scenario-text"></p>
+            <div class="scenario-context" id="scenario-context"></div>
+          </article>
+          <section class="decision-card" aria-labelledby="decision-heading">
+            <div class="decision-label">A TE DÖNTÉSED</div>
+            <h3 id="decision-heading">Mit tennél ebben a helyzetben?</h3>
+            <div class="choices" id="choices"></div>
+            <div class="feedback hidden" id="feedback" role="status" aria-live="polite"></div>
+            <button class="button button-primary next-button hidden" id="next-button">Következő helyzet <span aria-hidden="true">→</span></button>
+          </section>
+        </div>
+        <div class="mission-footer"><span><span class="shield-icon" aria-hidden="true">✓</span> A cél a tanulás, nem a hibátlan teszt.</span><span id="category-count">6 HELYZET</span></div>
+      </section>
+
+      <section class="screen finish-screen hidden" id="finish-screen" aria-live="polite">
+        <div class="finish-confetti" aria-hidden="true">✦</div>
+        <div class="finish-badge"><span>✓</span></div>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> KÜLDETÉS TELJESÍTVE</div>
+        <h2>Jól gondoltad<br /><span>végig.</span></h2>
+        <p class="finish-copy">Minden helyzet egy lehetőség volt arra, hogy megállj, ellenőrizz, és biztonságosabban dönts.</p>
+        <div class="result-panel">
+          <div class="result-stat"><strong id="result-correct">0/6</strong><span>elsőre jó döntés</span></div>
+          <div class="result-divider"></div>
+          <div class="result-stat"><strong id="result-xp">0 XP</strong><span>összegyűjtve</span></div>
+          <div class="result-divider"></div>
+          <div class="result-stat"><strong>6</strong><span>helyzet átgondolva</span></div>
+        </div>
+        <div class="takeaway"><span class="takeaway-icon" aria-hidden="true">✦</span><p><strong>Az online biztonság egy szokással kezdődik:</strong> ha valami sürget vagy gyanús, állj meg, és ellenőrizd egy megbízható úton.</p></div>
+        <button class="button button-primary" id="restart-button">Újra végigjárom <span aria-hidden="true">↻</span></button>
+      </section>
+    </main>
+    <footer class="site-footer"><span>KIBERKÜLDETÉS <span class="footer-sep">/</span> TANULÓI PROTOTÍPUS</span><span>Gondolkodj, mielőtt kattintasz.</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
